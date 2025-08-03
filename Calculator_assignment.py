@@ -7,7 +7,8 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
 
-choice = input("Enter choice (1/2/3/4): ")
+choice = input("Enter choice (1/2/3/4): ") #asks for user input
+
 
 if choice == '1':
     result = num1 + num2
@@ -25,4 +26,4 @@ else:
     print("Invalid operation")
     exit()
 
-print("Result:", result) #The result of the operation
+print("Result:", result) #The result of the operation is displayed here.
