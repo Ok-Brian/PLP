@@ -25,4 +25,4 @@ else:
     print("Invalid operation")
     exit()
 
-print("Result:", result)
+print("Result:", result) #The result of the operation
