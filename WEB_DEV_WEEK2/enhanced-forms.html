@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #2c3e50;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      border: 2px solid #2c3e50;
+      margin: 20px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Demo Web Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and an enhanced HTML5 form.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>My Hobbies (List Example)</h2>
+    <ul>
+      <li>Reading Technology Blogs</li>
+      <li>Playing Football</li>
+      <li>Coding Small Projects</li>
+      <li>Listening to Music</li>
+    </ul>
+
+    <h2>Steps to Build a Simple Web Page (Ordered List)</h2>
+    <ol>
+      <li>Plan the content structure</li>
+      <li>Write the HTML markup</li>
+      <li>Apply CSS for styling</li>
+      <li>Test and validate the page</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Sample Table of Favorite Programming Languages</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Creator</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>Guido van Rossum</td>
+          <td>1991</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Brendan Eich</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td>Go</td>
+          <td>Robert Griesemer, Rob Pike, Ken Thompson</td>
+          <td>2009</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Content</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image">
+      <figcaption>A sample placeholder image.</figcaption>
+    </figure>
+    <figure>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <figcaption>Sample audio clip.</figcaption>
+    </figure>
+    <figure>
+      <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Sample video clip.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="\+?[0-9]{10,15}" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" placeholder="Min 8 characters">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked>
+          Subscribe to newsletter
+        </label>
+
+        <p>Preferred Contact Method:</p>
+        <label><input type="radio" name="contact" value="email" required>Email</label>
+        <label><input type="radio" name="contact" value="phone">Phone</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself..." minlength="10"></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Demo Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
